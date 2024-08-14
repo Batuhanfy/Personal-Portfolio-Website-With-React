@@ -7,9 +7,10 @@ export default function profile() {
   <>
   <Container>
     <Row>
-       <Col xs="12" className="d-flex justify-content-center flex-column">
-        
-        <img src={`../images/batuhan.jpg`} width="100%" className="rounded" alt="Batuhan Korkmaz" />
+       <Col xs="12" className="d-flex justify-content-center flex-column align-items-xs-center">
+        <div class="col-xs-12 d-flex justify-content-center">
+        <img src={`../images/batuhan.jpg`} width="250px" className="rounded items-align-center" alt="Batuhan Korkmaz" />
+        </div>
         <h3 className="mt-2 fs-3 text-center mt-3">Batuhan Korkmaz</h3>
         <span class="mt-2 fs-6 text-center rounded-pill fw-light" style={{background:"rgb(238 238 238)"}}>Fullstack Developer</span>
         <ul style={{listStyle:"none",padding:"0"}} className=" mt-4 d-flex justify-content-around justify-content-lg-center" >

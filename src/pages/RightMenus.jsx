@@ -3,7 +3,7 @@ import React from 'react'
 export default function RightMenus() {
   return (
     <>
-    <ul className="list-unstyled d-flex flex-column align-items-center fw-normal right-items" style={{fontSize:"14px"}}>
+    <ul className="list-unstyled d-flex flex-column align-items-center fw-normal right-items d-xs-none" style={{fontSize:"14px"}}>
    
 
 

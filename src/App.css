@@ -1,6 +1,5 @@
 body{
-  background-image: url('images/bg1.png');
-  background-size: cover;
+  background-image: url('images/white-bg-2.jpg');
   font-family: "Poppins", sans-serif;
 
 }
@@ -86,6 +85,7 @@ body{
 
 }
 .notification {
+  display: flex;;
   color:green;
   position: relative; /* Pozisyonlama için gerekli */
   padding-left: 30px; /* Nokta ve yazı arasına boşluk ekler */
@@ -131,78 +131,36 @@ body{
     box-shadow: 0 0 0 rgba(0, 255, 0, 0.6); /* Yeşil halka etkisi kapanma */
   }
 }
-
 .marquee {
-  margin: 0em 10px;
-}
-.marquee-box-one {
-  padding: 15px;
-  box-shadow: 1px 1px 4px 0px #bfb9b9;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 3em 0 0 0;
-}
-.static-text{
-  padding: 10px;
   font-family: 'Montserrat';
-  font-weight: 600;
-  display: flex;
-  text-align: center;
-  z-index: 999;
-  position: absolute;
-  left: 0;
-  background: #e45179;
-  color: white;
-  height: 100%;
-  align-content: center;
-  align-items: center;
-}
-.marquee-content-one {
-  display: flex;
-  gap: 40px;
-  padding: 0 20px;
-  animation: scroll-one 30s linear infinite;
-}
-.marquee-box-two {
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
-  margin: 3em 0 6em 0;
+  background-color: #f8f9fa; /* Arka plan rengi */
 }
-.marquee-content-two {
+
+.marquee-content {
   display: flex;
-  gap: 40px;
-  padding: 0 20px;
-  animation: scroll-two 30s linear infinite;
-}
-.marquee-text {
+  flex-wrap: nowrap;
   white-space: nowrap;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
-  flex-shrink: 0;
+  animation: marquee 25s linear infinite; 
+}
+.marquee-content svg{
+  margin-right: 10px;
+}
+
+.marquee-content p {
+  display: inline-block;
   margin: 0;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: #000;
-  /* background-color: #ff5151; */
-  display: flex;
-  align-items: center;
-  user-select: none;
-}
-.marquee-text:hover {
-
-  border: 1px solid #31393F;
+  padding: 0 50px; /* Yazılar arasındaki boşluk */
+  font-size: 1.2rem; /* Yazı büyüklüğü */
+  color: #343a40; /* Yazı rengi */
 }
 
-@keyframes scroll-one {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+/* Kayan yazıların animasyonu */
+@keyframes marquee {
+  from { transform: translateX(95%); }
+  to { transform: translateX(-70%); }
 }
-@keyframes scroll-two {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
-}
+

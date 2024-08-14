@@ -13,7 +13,7 @@ export default function Mains() {
 
 
         <div class="row p-5" >
-            <div class="col-lg-3 col-md-4 col-xs-12 mb-4 mt-4 ">
+            <div class="col-lg-3 col-md-4 col-xs-12 mb-4 mt-4  align-items-sm-center ">
                 <div class="sticky-div ">
                   <div class="bg-light p-3 rounded-20 shadow-sm">
                   <ProfileBand/>
@@ -103,7 +103,7 @@ export default function Mains() {
   
                 </div>
             </div>
-            <div class="col-lg-1 d-md-none d-lg-block mt-4 ">
+            <div class="col-lg-1 d-xs-none d-md-none d-lg-block mt-4 ">
                 <div class="sticky-div rounded-20 bg-light p-3 shadow">
       <RightMenus/>
               </div>
