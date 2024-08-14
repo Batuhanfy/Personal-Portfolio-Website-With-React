@@ -1,0 +1,208 @@
+body{
+  background-image: url('images/bg1.png');
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+
+}
+.right-item{
+  border-radius: 4px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin: 0 !important;
+  background: #fff;
+  padding: 8px 10px;
+  z-index: 33;
+}
+.wp-header{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+}
+.rounded-20{
+  border-radius: 20px;
+}
+
+.buttons{
+
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.buttons-a{
+  text-transform: capitalize;
+  display: block;
+  padding: 10px 10px;
+  background: #fff;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 2px solid #00000024;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a4a4a;
+  transition: background-color 0.3s ease, color 0.6s ease;
+}
+.buttons-a:hover{
+  background: #ec5454;
+  color: #fff;
+}
+
+.sticky-div {
+  position: sticky;
+  top: 20px;
+
+}
+.content-div {
+  min-height: 50vh; 
+}
+
+.text-s{
+  text-align: center;
+  margin: 0 !important;
+  display: inline-flex;
+  line-height: initial;
+  gap: 5px;
+  position: relative;
+}
+
+.t-montserrat{
+  font-family: 'Montserrat';
+}
+
+.iconright{
+  background:rgb(219 220 221);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.iconrightm:hover .iconright{
+ color:#fff;
+  background-color: #ec5454;
+}
+
+.button-left:hover{
+  background:rgb(1, 32, 79) ;
+
+}
+.notification {
+  color:green;
+  position: relative; /* Pozisyonlama için gerekli */
+  padding-left: 30px; /* Nokta ve yazı arasına boşluk ekler */
+  font-size: 16px; /* Yazı boyutu */
+}
+.scrolling-items {
+  max-height: 100px; /* Görünür alanın yüksekliği */
+  overflow-y: auto; /* Dikey kaydırma */
+  white-space: nowrap; /* Maddelerin yan yana görünmesini sağlar */
+}
+
+.scrolling-items li {
+  display: inline-block; /* Maddelerin yan yana dizilmesini sağlar */
+  margin-right: 20px; /* Maddeler arasındaki boşluk */
+  padding: 10px; /* Maddelerin iç boşluğu */
+  background-color: #f8f9fa; /* Maddelerin arka plan rengi */
+  border: 1px solid #dee2e6; /* Maddelerin kenarlık rengi */
+  border-radius: 5px; /* Maddelerin köşe yuvarlama */
+}
+
+.notification::before {
+  content: ''; /* İçerik yok, sadece bir nokta olarak görünecek */
+  position: absolute; /* Pozisyonlama için gerekli */
+  left: 0; /* Sol tarafa hizalar */
+  top: 50%; /* Yükseklik merkezine hizalar */
+  transform: translateY(-50%); /* Yükseklik merkezine doğru kaydırır */
+  width: 10px; /* Nokta genişliği */
+  height: 10px; /* Nokta yüksekliği */
+  border-radius: 50%; /* Yuvarlak nokta yapar */
+  background-color: green; /* Noktanın rengi */
+  box-shadow: 0 0 0 rgba(0, 255, 0, 0.6); /* Yeşil halka efekti için başlangıçta görünmez */
+  animation: pulse 1.5s infinite; /* Yanıp sönme animasyonu */
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 255, 0, 0.6); /* Yeşil halka etkisi başlangıcı */
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6); /* Yeşil halka etkisi büyüme */
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 255, 0, 0.6); /* Yeşil halka etkisi kapanma */
+  }
+}
+
+.marquee {
+  margin: 0em 10px;
+}
+.marquee-box-one {
+  padding: 15px;
+  box-shadow: 1px 1px 4px 0px #bfb9b9;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 3em 0 0 0;
+}
+.static-text{
+  padding: 10px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  background: #e45179;
+  color: white;
+  height: 100%;
+  align-content: center;
+  align-items: center;
+}
+.marquee-content-one {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  animation: scroll-one 30s linear infinite;
+}
+.marquee-box-two {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 3em 0 6em 0;
+}
+.marquee-content-two {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  animation: scroll-two 30s linear infinite;
+}
+.marquee-text {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #000;
+  /* background-color: #ff5151; */
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.marquee-text:hover {
+
+  border: 1px solid #31393F;
+}
+
+@keyframes scroll-one {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes scroll-two {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
