@@ -4,7 +4,7 @@ import { Container ,Row } from 'reactstrap';
 const About = () => (
   <Container className="my-5">
  <Row>
- 3434
+  This is about me.
  </Row>
   </Container>
 );
