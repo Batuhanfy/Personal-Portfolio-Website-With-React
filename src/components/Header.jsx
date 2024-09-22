@@ -27,7 +27,7 @@ export default function Header() {
               <div className="wp-header">
                 <div className="logo">
                   <Link to="/">
-                    <img src="../images/logo.png" height="75px" alt="Logo" />
+                    <img src="../images/logo.png" height="70px" alt="Logo" />
                   </Link>
                 </div>
 
